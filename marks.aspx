@@ -43,9 +43,9 @@
            
             <Columns>
                 <asp:TemplateField>
-                    <FooterTemplate>
+                    <HeaderTemplate>
                         <asp:CheckBox ID="chkHeader" runat="server" AutoPostBack="True" OnCheckedChanged="chkHeader_CheckedChanged" />
-                    </FooterTemplate>
+                    </HeaderTemplate>
                     <ItemTemplate>
                         <asp:CheckBox ID="ChkEmp" runat="server" AutoPostBack="True" OnCheckedChanged="ChkEmp_CheckedChanged" />
                     </ItemTemplate>
