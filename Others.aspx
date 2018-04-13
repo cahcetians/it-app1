@@ -98,8 +98,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <AlternatingRowStyle BackColor="White" />
             <Columns>
             <asp:TemplateField>
+                <HeaderTemplate>
+                    <asp:CheckBox ID="ChkHeader" runat="server" AutoPostBack="True" OnCheckedChanged="ChkHeader_CheckedChanged" />
+                </HeaderTemplate>
                 <ItemTemplate>
-                    <asp:CheckBox ID="chkCtrl" runat="server" />
+                    <asp:CheckBox ID="chkCtrl" runat="server" OnCheckedChanged="chkCtrl_CheckedChanged" />
                 </ItemTemplate>
             </asp:TemplateField>
                
@@ -133,7 +136,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <br />
 &nbsp;<br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="TextBox2" runat="server" Height="126px" Width="528px" TextMode="MultiLine" AutoPostBack="True"></asp:TextBox>
+        <asp:TextBox ID="TextBox2" runat="server" Height="126px" Width="528px" TextMode="MultiLine" AutoPostBack="True" Visible="False"></asp:TextBox>
         <br />
         <br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -150,7 +153,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <asp:TextBox ID="TextBox1" runat="server" Height="126px" Width="528px" TextMode="MultiLine" Visible="False"></asp:TextBox>
         <br />
         <br />
-        <asp:TextBox ID="TextBox3" runat="server" Visible="False" MaxLength="2000000"></asp:TextBox>
+        <asp:TextBox ID="TextBox3" runat="server" Visible="False"></asp:TextBox>
         <br />
         <br />
         <br />

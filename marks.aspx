@@ -23,7 +23,8 @@
             <asp:ListItem>Sem4</asp:ListItem>
             <asp:ListItem>Sem5</asp:ListItem>
             <asp:ListItem>Sem6</asp:ListItem>
-            <asp:ListItem>sem7</asp:ListItem>
+            <asp:ListItem>Sem7</asp:ListItem>
+            <asp:ListItem>Sem8</asp:ListItem>
         </asp:DropDownList>
         <br />
         <br />
