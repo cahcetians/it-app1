@@ -66,12 +66,12 @@
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Send" />
         <br />
         <br />
-        <asp:TextBox ID="TextBox2" runat="server" Visible="False"></asp:TextBox>
+        <asp:TextBox ID="TextBox2" runat="server" Visible="False" MaxLength="20000000"></asp:TextBox>
         &nbsp;<br />
         <asp:TextBox ID="TextBox3" runat="server" OnTextChanged="TextBox3_TextChanged" MaxLength="20000000" Visible="False"></asp:TextBox>
         <br />
         <p>
-        <asp:TextBox ID="TextBox1" runat="server" AutoPostBack="True" Width="156px" CssClass="auto-style2" Visible="False"></asp:TextBox>
+        <asp:TextBox ID="TextBox1" runat="server" AutoPostBack="True" Width="156px" CssClass="auto-style2" Visible="False" MaxLength="20000000"></asp:TextBox>
         </p>
     </form>
 </body>
